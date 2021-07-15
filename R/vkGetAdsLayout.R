@@ -60,7 +60,8 @@ vkGetAdsLayout <- function(
   stop_for_status(answer)
   # pars answer body
   dataRaw <- content(answer, "parsed", "application/json")
-  
+    
+  return(dataRaw) 
   # to table
   result <- bind_rows(dataRaw)
 
