@@ -62,6 +62,7 @@ vkGetAdsLayout <- function(
   dataRaw <- content(answer, "parsed", "application/json")
   
   # to table
+  return(dataRaw)  
   result <- bind_rows(dataRaw)
 
   if(status_names == TRUE){
